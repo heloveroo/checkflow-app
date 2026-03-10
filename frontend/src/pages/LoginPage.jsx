@@ -27,7 +27,9 @@ export default function LoginPage() {
   const demos = [
     { label: 'Адмін', email: 'admin@company.com', password: 'Admin123!', color: 'var(--danger)' },
     { label: 'Менеджер', email: 'manager@company.com', password: 'Manager123!', color: '#8b5cf6' },
-    { label: 'Співробітник', email: 'ivan@company.com', password: 'Employee123!', color: 'var(--accent)' }
+    { label: 'Співробітник', email: 'ivan@company.com', password: 'Employee123!', color: 'var(--accent)'},
+    { label: 'Співробітник', email: 'olena@company.com', password: 'Employee123!', color: 'var(--accent)' },
+    { label: 'Гість', email: 'guest@company.com', password: 'Guest123!', color: 'var(--text-muted)' }
   ];
 
   return (
