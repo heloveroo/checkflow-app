@@ -22,6 +22,7 @@ const seed = async () => {
   const manager   = await User.create({ name: 'Manager',  email: 'manager@company.com', password: 'Manager123!',  role: 'manager',  department: 'HR' });
   const employee1 = await User.create({ name: 'Ivan',     email: 'ivan@company.com',    password: 'Employee123!', role: 'employee', department: 'Development' });
   const employee2 = await User.create({ name: 'Olena',    email: 'olena@company.com',   password: 'Employee123!', role: 'employee', department: 'QA' });
+  const guest = await User.create({ name: 'Guest', email: 'guest@company.com', password: 'Guest123!', role: 'guest' });
 
   const [hrCat, devCat, qaCat, secCat, routineCat] = await Category.insertMany([
     { name: 'HR & Onboarding', color: '#8b5cf6', icon: '👥', createdBy: admin._id },
@@ -190,6 +191,7 @@ const seed = async () => {
   console.log('  manager@company.com  / Manager123!');
   console.log('  ivan@company.com     / Employee123!');
   console.log('  olena@company.com    / Employee123!');
+  console.log('  guest@company.com    / Guest123!');
   process.exit(0);
 };
 
